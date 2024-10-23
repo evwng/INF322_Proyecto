@@ -10,3 +10,15 @@ Este proyecto será implementado en la asignatura Diseño de Interfaces Usuarias
 1. Catalina Cortez García - 202173092-3
 3. Gabriel Pinto Fernández - 201873052-1
 4. Eva Wang Liu - 202111004-6
+
+## Instrucciones de uso
+
+### Entorno de ejecución
+- En una terminal ejecutar "npm run dev" en la consola.
+- Abrir http://localhost:5050
+
+## Consideraciones
+
+### Requisitos
+- Node (versión 16.13.1 o posterior)
+- npm (versión 8.1.2 o posterior)

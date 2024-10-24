@@ -1,32 +1,27 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import Bloque from '../../components/bloque'
-import SubBloque from '../../components/subbloque'
+import LayoutBloque from '../../components/layout_bloque'
+import LayoutSubbloque from '../../components/layout_subbloque'
 
 export const CuidadorAcceso = () => {
   return (
     <div className='cuidador__acceso'>
-        <Bloque>
-            <h2> Consulta </h2>
-            <SubBloque>
-                <form>
-                    <label> 
-                        RUT del paciente
-                        <input
-                            type="text"
-                            placeholder="11.111.111-k"
-                        />
-                    </label>
-                </form>
-                <Link to="/acceso">
-                    <button> Volver </button>
-                </Link>
-                <Link to="/acceso/cuidador/inicio">
-                    <button> Consultar </button>
-                </Link>
-            </SubBloque>
-        </Bloque>
+        <LayoutBloque>
+            <h2 className='layout__bloque__subtitulo'> Consulta </h2>
+            <div className='layout__bloque__inferior'>
+                <LayoutSubbloque>
+                    <div className='cuidador__acceso__subbloque__input'>
+                        <label> RUT del paciente </label>
+                        <input type='text' placeholder='11.111.111-k'/>
+                    </div>
+                    <div className='cuidador__acceso__subbloque__opciones'>
+                        <Link to="/acceso"> <button className='volver'> Volver </button> </Link>
+                        <Link to="/acceso/cuidador/inicio"> <button className='consultar'> Consultar </button> </Link>
+                    </div>
+                </LayoutSubbloque>
+            </div>
+        </LayoutBloque>
     </div>
   )
 }

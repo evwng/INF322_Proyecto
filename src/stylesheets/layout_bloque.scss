@@ -1,4 +1,4 @@
-.bloque__pagina {
+.layout__bloque__pagina {
     width: 100%;
     height: 100%;
     background-color: #ffdcb4;
@@ -8,7 +8,7 @@
     justify-content: center;
 }
 
-.bloque {
+.layout__bloque {
     width: 25%;
     height: 75%;
     padding: 2.5vh;
@@ -20,7 +20,7 @@
     flex-direction: column;
 }
 
-.bloque__titulo {
+.layout__bloque__titulo {
     width: 100%;
     height: 10%;
 
@@ -31,7 +31,16 @@
     font-size: 20px;
 }
 
-.bloque__subtitulo {
+.layout__bloque__children {
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.layout__bloque__subtitulo {
     width: 100%;
     height: 10%;
 
@@ -43,11 +52,11 @@
     font-weight: bolder;
 }
 
-.bloque__children {
+.layout__bloque__inferior {
     width: 100%;
     height: 90%;
 
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
 }

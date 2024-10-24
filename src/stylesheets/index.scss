@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-@import './bloque.scss';
 @import './layout.scss';
+@import './layout_bloque.scss';
+@import './layout_subbloque.scss';
 @import './inicio.scss';
 @import './acceso.scss';
 @import './cuidador/acceso.scss';
@@ -19,8 +20,14 @@ html, body {
 
     box-sizing: border-box;
 
+    border-style: none;
+
     color: black;
     font-weight: normal;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
+}
+
+button {
+    cursor: pointer;
 }

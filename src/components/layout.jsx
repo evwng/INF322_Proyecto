@@ -23,7 +23,7 @@ const Layout = () => {
           <Link to='/'>
               <img src={Logo} className='layout__logo' alt='logo'/>
           </Link>
-          <MostrarTitulo />
+          <MostrarTitulo/>
         </div>
         <div className='layout__pagina'>
           <Routes>

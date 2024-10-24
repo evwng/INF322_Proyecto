@@ -7,13 +7,13 @@ export const Inicio = () => {
   return (
     <div className='inicio'>
       <div className='inicio__izquierda'>
-        <h1 className='inicio__texto'> Monitorea el desarrollo de tu bebé </h1>
+        <h1> Monitorea el desarrollo de tu bebé </h1>
         <Link to='/acceso'>
-          <button className='inicio__boton'> Comienza aquí </button>
+          <button> Comienza aquí </button>
         </Link>
       </div>
       <div className='inicio__derecha'>
-        <img src={ImagenFamilia} className='inicio__imagen' alt='Imagen de una familia'/>
+        <img src={ImagenFamilia} alt='Imagen de una familia'/>
       </div>
     </div>
   )

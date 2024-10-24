@@ -1,39 +1,37 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import Bloque from '../../components/bloque'
-import SubBloque from '../../components/subbloque'
+import LayoutBloque from '../../components/layout_bloque'
+import LayoutSubbloque from '../../components/layout_subbloque'
 
 export const PediatraAcceso = () => {
   return (
     <div className='pediatra__acceso'>
-        <Bloque>
-            <h2> Consulta </h2>
-            <SubBloque>
-                <form>
-                    <label> 
-                        Correo electrónico
-                        <input
-                            type="text"
-                            placeholder="pediatra@clinica.cl"
-                        />
-                    </label>
-                    <label> 
-                        Contraseña
-                        <input
-                            type="password"
-                            placeholder="********"
-                        />
-                    </label>
-                </form>
-                <Link to="/acceso">
-                    <button> Volver </button>
-                </Link>
-                <Link to="/acceso/pediatra/inicio">
-                    <button> Iniciar sesión </button>
-                </Link>
-            </SubBloque>
-        </Bloque>
+        <LayoutBloque>
+            <h2 className='layout__bloque__subtitulo'> Consulta </h2>
+            <div className='layout__bloque__inferior'>
+                <LayoutSubbloque>
+                    <div className='layout__bloque__input'>
+                        <div>
+                            <label> Correo electrónico </label>
+                            <input type="text" placeholder="pediatra@clinica.cl"/>
+                        </div>
+                        <div>
+                            <label> Contraseña </label>
+                            <input type="password" placeholder="********"/>
+                        </div>
+                    </div>
+                    <div className='layout__bloque__opciones'>
+                        <Link to="/acceso">
+                            <button className='layout__bloque__opciones__volver'> Volver </button>
+                        </Link>
+                        <Link to="/acceso/pediatra/inicio">
+                            <button className='layout__bloque__opciones__sesion'> Iniciar sesión </button>
+                        </Link>
+                    </div>
+                </LayoutSubbloque>
+            </div>
+        </LayoutBloque>
     </div>
   )
 }

@@ -6,7 +6,7 @@ import SubBloque from '../../components/subbloque'
 
 export const CuidadorAcceso = () => {
   return (
-    <div>
+    <div className='cuidador__acceso'>
         <Bloque>
             <h2> Consulta </h2>
             <SubBloque>

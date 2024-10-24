@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom'
 
 import Logo from '../assets/logo.png'
 import Inicio from '../pages/inicio'
@@ -10,14 +10,22 @@ import PediatraAcceso from '../pages/pediatra/acceso'
 import PediatraInicio from '../pages/pediatra/inicio'
 import PediatraInsertar from '../pages/pediatra/insertar'
 
+const MostrarTitulo = () => {
+  const ubicacion = useLocation();
+  return ubicacion.pathname === '/' ? <h1 className='layout__titulo'> MiPequeñoProgreso </h1> : null;
+}
+
 const Layout = () => {
   return (
     <BrowserRouter>
       <div className='layout'>
-        <Link to='/'>
-            <img src={Logo} height={50} alt='logo'/>
-        </Link>
-        <div className='layout__page'>
+        <div className='layout__header'>
+          <Link to='/'>
+              <img src={Logo} className='layout__logo' alt='logo'/>
+          </Link>
+          <MostrarTitulo />
+        </div>
+        <div className='layout__pagina'>
           <Routes>
             <Route path='/' element={<Inicio />} />
             <Route path='/acceso' element={<Acceso />} />

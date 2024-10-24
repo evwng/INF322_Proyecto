@@ -6,7 +6,7 @@ import SubBloque from '../../components/subbloque'
 
 export const PediatraInsertar = () => {
   return (
-    <div>
+    <div className='pediatra__insertar'>
         <Bloque>
             <h2> Consulta </h2>
             <SubBloque>
@@ -30,7 +30,7 @@ export const PediatraInsertar = () => {
                     <button> Cancelar </button>
                 </Link>
                 <Link to="/acceso/pediatra/inicio">
-                    <button> Insertar </button>
+                    <button> Agregar </button>
                 </Link>
             </SubBloque>
         </Bloque>

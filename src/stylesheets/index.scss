@@ -3,11 +3,13 @@
 @import './layout.scss';
 @import './layout_bloque.scss';
 @import './layout_subbloque.scss';
+@import './tabla_controles.scss';
 @import './inicio.scss';
 @import './acceso.scss';
 @import './cuidador/acceso.scss';
 @import './pediatra/acceso.scss';
 @import './pediatra/insertar.scss';
+@import './pediatra/inicio.scss';
 
 html, body {
     padding: 0;

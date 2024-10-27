@@ -1,0 +1,33 @@
+// TablaControles.scss
+
+.tabla__controles {
+    width: 80%;  // Ocupa 80% del ancho del contenedor padre
+    margin: auto;
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;  // Elimina espacios entre celdas
+    }
+  
+    th, td {
+      border: 1px solid #ddd;  // Bordes finos entre celdas
+      padding: 12px;
+      text-align: center;
+    }
+  
+    thead th {
+      background-color: #ffdcb4;
+      color: black;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  
+    tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  
+    tbody tr:hover {
+      background-color: #ddd;
+    }
+  }
+  

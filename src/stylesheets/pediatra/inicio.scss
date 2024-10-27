@@ -1,0 +1,40 @@
+.pediatra__inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Espacio entre bloques */
+    padding: 2rem;
+  
+    .bienvenida {
+      text-align: center;
+  
+      h1 {
+        margin-bottom: 0.5rem;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        color: #555;
+      }
+    }
+    
+    .agregar-control {
+      margin-top: 1rem;
+  
+      button {
+        background-color: #ffdcb4;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #eeaf68;
+        }
+      }
+    }
+  }
+  

@@ -20,6 +20,10 @@ export const PediatraInsertar = () => {
                             <label> Peso [kg] </label>
                             <input type="text" placeholder=" Y"/>
                         </div>
+                        <div className='pediatra__insertar__subbloque__entradas__entrada'>
+                            <label> Estatura [cm] </label>
+                            <input type="text" placeholder=" Y"/>
+                        </div>
                     </div>
                     <div className='pediatra__insertar__subbloque__opciones'>
                         <Link to="/acceso/pediatra/inicio" className='pediatra__acceso__subbloque__opciones__1'>

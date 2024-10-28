@@ -6,7 +6,10 @@
     padding: 2rem;
   
     .bienvenida {
-      text-align: center;
+      align-self: flex-start;
+      text-align: start;
+      width: 80%;
+      margin: auto;
   
       h1 {
         margin-bottom: 0.5rem;
@@ -19,7 +22,11 @@
     }
     
     .agregar-control {
+      align-self: flex-end;
+      text-align: end;
       margin-top: 1rem;
+      width: 80%;
+      margin: auto;
   
       button {
         padding: 15px;

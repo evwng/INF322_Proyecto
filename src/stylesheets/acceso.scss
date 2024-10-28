@@ -12,11 +12,12 @@
         font-size: 15px;
 
         p {
-            font-size: 12px;
             opacity: 0.75;
+            
+            font-size: 12px;
         }
 
-        label {
+        label, input {
             cursor: pointer;
         }
     }

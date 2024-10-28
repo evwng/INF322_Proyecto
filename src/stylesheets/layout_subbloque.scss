@@ -1,14 +1,14 @@
 .layout__subbloque {
-    width: auto;
+    width: 20vw;
     height: auto;
     padding: 2.5vh;
-    border-style: ridge;
     border-radius: 5px;
     background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-    gap: 10px;
+    gap: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
 }

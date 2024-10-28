@@ -1,6 +1,7 @@
 .layout {
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
+
     display: flex;
     flex-direction: column;
 }
@@ -8,11 +9,13 @@
 .layout__header {
     width: 100%;
     height: 10%;
-    padding: 2.5vh;
-    margin: 0;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
     background-color: #ffdcb4;
 
-    gap: 10px;
+    gap: 15px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -20,12 +23,11 @@
 }
 
 .layout__logo {
-    width: auto;
     height: 7.5vh;
 }
 
 .layout__titulo {
-    font-size: 100%;
+    font-size: 20px;
     font-weight: bolder;
 }
 

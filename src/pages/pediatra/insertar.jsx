@@ -8,31 +8,29 @@ export const PediatraInsertar = () => {
   return (
     <div className='pediatra__insertar'>
         <LayoutBloque>
-            <h2 className='layout__bloque__subtitulo'> Consulta </h2>
+            <h2 className='layout__bloque__subtitulo'> Ingresar datos </h2>
             <div className='layout__bloque__inferior'>
                 <LayoutSubbloque>
-                    <form>
-                        <label> 
-                            RUT del paciente
-                            <input
-                                type="text"
-                                placeholder="11.111.111-k"
-                            />
-                        </label>
-                        <label> 
-                            Peso [kg]
-                            <input
-                                type="text"
-                                placeholder="Y"
-                            />
-                        </label>
-                    </form>
-                    <Link to="/acceso/pediatra/inicio">
-                        <button> Cancelar </button>
-                    </Link>
-                    <Link to="/acceso/pediatra/inicio">
-                        <button> Agregar </button>
-                    </Link>
+                    <div className='pediatra__insertar__subbloque__entradas'>
+                        <div className='pediatra__insertar__subbloque__entradas__entrada'>
+                            <label> RUT del paciente </label>
+                            <input type="text" placeholder=" 11.111.111-k"/>
+                        </div>
+                        <div className='pediatra__insertar__subbloque__entradas__entrada'>
+                            <label> Peso [kg] </label>
+                            <input type="text" placeholder=" Y"/>
+                        </div>
+                    </div>
+                    <div className='pediatra__insertar__subbloque__opciones'>
+                        <Link to="/acceso/pediatra/inicio" className='pediatra__acceso__subbloque__opciones__1'>
+                            <button> Agregar </button>
+                        </Link>
+                        <div className='pediatra__insertar__subbloque__opciones__2'>
+                            <Link to="/acceso/pediatra/inicio">
+                                <button> Cancelar </button>
+                            </Link>
+                        </div>
+                    </div>
                 </LayoutSubbloque>
             </div>
         </LayoutBloque>

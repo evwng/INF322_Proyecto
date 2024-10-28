@@ -13,7 +13,7 @@ export const CuidadorAcceso = () => {
                 <LayoutSubbloque>
                     <div className='cuidador__acceso__subbloque__input'>
                         <label> RUT del paciente </label>
-                        <input type='text' placeholder='11.111.111-k'/>
+                        <input type='text' placeholder=' 11.111.111-k'/>
                     </div>
                     <div className='cuidador__acceso__subbloque__opciones'>
                         <Link to="/acceso"> <button className='volver'> Volver </button> </Link>

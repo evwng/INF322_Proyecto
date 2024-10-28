@@ -1,0 +1,85 @@
+.pediatra__acceso, .pediatra__insertar {
+    width: 100%;
+    height: 100%;
+
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &__subbloque {
+        &__entradas {
+            width: 100%;
+            height: 100%;
+
+            gap: 10px;
+            display: flex;
+            align-items: left;
+            flex-direction: column;
+
+            &__entrada {
+                width: 100%;
+                height: 50%;
+
+                gap: 5px;
+                display: flex;
+                align-items: left;
+                flex-direction: column;
+
+                label {
+                    font-size: 15px;
+                }
+
+                input {
+                    width: 100%;
+                    padding: 2.5px;
+
+                    border-style: ridge;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        &__opciones {
+            width: 100%;
+            height: 100%;
+
+            gap: 10px;
+            display: flex;
+            align-items: left;
+            flex-direction: column;
+
+           &__1 {
+            gap: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                button {
+                    width: 100%;
+
+                    padding: 5px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: orange;
+
+                    color: white;
+
+                    cursor: pointer;
+                }
+            }
+
+            &__2 {
+                display: flex;
+                align-items: left;
+
+                button {
+                    background-color: white;
+
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

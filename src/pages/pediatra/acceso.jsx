@@ -8,26 +8,28 @@ export const PediatraAcceso = () => {
   return (
     <div className='pediatra__acceso'>
         <LayoutBloque>
-            <h2 className='layout__bloque__subtitulo'> Consulta </h2>
+            <h2 className='layout__bloque__subtitulo'> Iniciar sesión </h2>
             <div className='layout__bloque__inferior'>
                 <LayoutSubbloque>
-                    <div className='layout__bloque__input'>
-                        <div>
+                    <div className='pediatra__acceso__subbloque__entradas'>
+                        <div className='pediatra__acceso__subbloque__entradas__entrada'>
                             <label> Correo electrónico </label>
-                            <input type="text" placeholder="pediatra@clinica.cl"/>
+                            <input type="text" placeholder=" pediatra@clinica.cl"/>
                         </div>
-                        <div>
+                        <div className='pediatra__acceso__subbloque__entradas__entrada'>
                             <label> Contraseña </label>
-                            <input type="password" placeholder="********"/>
+                            <input type="password" placeholder=" ********"/>
                         </div>
                     </div>
-                    <div className='layout__bloque__opciones'>
-                        <Link to="/acceso">
-                            <button className='layout__bloque__opciones__volver'> Volver </button>
+                    <div className='pediatra__acceso__subbloque__opciones'>
+                        <Link to="/acceso/pediatra/inicio" className='pediatra__acceso__subbloque__opciones__1'>
+                            <button> Iniciar sesión </button>
                         </Link>
-                        <Link to="/acceso/pediatra/inicio">
-                            <button className='layout__bloque__opciones__sesion'> Iniciar sesión </button>
-                        </Link>
+                        <div className='pediatra__acceso__subbloque__opciones__2'>
+                            <Link to="/acceso">
+                                <button> Volver </button>
+                            </Link>
+                        </div>
                     </div>
                 </LayoutSubbloque>
             </div>

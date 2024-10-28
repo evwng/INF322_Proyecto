@@ -7,18 +7,16 @@
 @import './inicio.scss';
 @import './acceso.scss';
 @import './cuidador/acceso.scss';
-@import './pediatra/acceso.scss';
-@import './pediatra/insertar.scss';
+@import './pediatra/acceso-insertar.scss';
 @import './pediatra/inicio.scss';
 
 html, body {
-    padding: 0;
-    margin: 0;
     overflow: hidden;
 }
 
 * {
     margin: 0;
+    padding: 0;
 
     box-sizing: border-box;
 

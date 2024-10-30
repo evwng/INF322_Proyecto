@@ -31,7 +31,18 @@
     font-weight: bolder;
 }
 
+.layout__breadcrumb {
+    display: flex;
+    align-items: center;
+    padding-left: .5vw;
+    width: 100%;
+    height: 4%;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: #f0b879;
+}
+
 .layout__pagina {
     width: 100%;
-    height: 90%;
+    height: 86%;
 }

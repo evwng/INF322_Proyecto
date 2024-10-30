@@ -9,6 +9,7 @@ import CuidadorInicio from '../pages/cuidador/inicio'
 import PediatraAcceso from '../pages/pediatra/acceso'
 import PediatraInicio from '../pages/pediatra/inicio'
 import PediatraInsertar from '../pages/pediatra/insertar'
+import Breadcrumb from '../components/breadcrumb.jsx';
 
 const MostrarTitulo = () => {
   const ubicacion = useLocation();
@@ -25,6 +26,10 @@ const Layout = () => {
           </Link>
           <MostrarTitulo/>
         </div>
+        <div className='layout__breadcrumb'>
+          {/* Componente Breadcrumb */}
+          <Breadcrumb />
+        </div>
         <div className='layout__pagina'>
           <Routes>
             <Route path='/' element={<Inicio />} />
@@ -33,7 +38,7 @@ const Layout = () => {
             <Route path='/acceso/cuidador/inicio' element={<CuidadorInicio />} />
             <Route path='/acceso/pediatra' element={<PediatraAcceso />} />
             <Route path='/acceso/pediatra/inicio' element={<PediatraInicio />} />
-            <Route path='/acceso/pediatra/insertar' element={<PediatraInsertar />} />
+            <Route path='/acceso/pediatra/inicio/insertar' element={<PediatraInsertar />} />
           </Routes>
         </div>
       </div>

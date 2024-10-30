@@ -11,7 +11,7 @@ const PediatraInicio = () => {
   ];
 
   const irAInsertar = () => {
-    navigate('/acceso/pediatra/insertar', { state: { controles } }); // Navegar con estado
+    navigate('/acceso/pediatra/inicio/insertar', { state: { controles } }); // Navegar con estado
   };
 
   return (

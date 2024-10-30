@@ -1,0 +1,31 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb__list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb__link {
+  text-decoration: none;
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.breadcrumb__link:hover {
+  background-color: #e0e0e0;
+}
+
+.breadcrumb__link.active {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}

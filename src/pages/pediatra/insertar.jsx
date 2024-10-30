@@ -1,10 +1,29 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 import LayoutBloque from '../../components/layout_bloque'
 import LayoutSubbloque from '../../components/layout_subbloque'
 
-export const PediatraInsertar = () => {
+const PediatraInsertar = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [controles, setControles] = useState(location.state?.controles || []);
+  const [rut, setRut] = useState('');
+  const [peso, setPeso] = useState('');
+  const [estatura, setEstatura] = useState('');
+
+  const handleAgregar = () => {
+    const nuevoControl = {
+      id: controles.length + 1,
+      rut,
+      peso: Number(peso),
+      estatura: Number(estatura),
+    };
+
+    setControles([...controles, nuevoControl]);
+    navigate('/acceso/pediatra/inicio', { state: { controles: [...controles, nuevoControl] } });
+  };
+
   return (
     <div className='pediatra__insertar'>
         <LayoutBloque>
@@ -14,32 +33,30 @@ export const PediatraInsertar = () => {
                     <div className='pediatra__insertar__subbloque__entradas'>
                         <div className='pediatra__insertar__subbloque__entradas__entrada'>
                             <label> RUT del paciente </label>
-                            <input type="text" placeholder=" 11.111.111-k"/>
+                            <input type="text" placeholder="RUT" value={rut} onChange={(e) => setRut(e.target.value)} />
                         </div>
                         <div className='pediatra__insertar__subbloque__entradas__entrada'>
                             <label> Peso [kg] </label>
-                            <input type="text" placeholder=" Y"/>
+                            <input type="text" placeholder="Peso" value={peso} onChange={(e) => setPeso(e.target.value)} />
                         </div>
                         <div className='pediatra__insertar__subbloque__entradas__entrada'>
                             <label> Estatura [cm] </label>
-                            <input type="text" placeholder=" Y"/>
+                            <input type="text" placeholder="Estatura" value={estatura} onChange={(e) => setEstatura(e.target.value)} />
                         </div>
                     </div>
                     <div className='pediatra__insertar__subbloque__opciones'>
-                        <Link to="/acceso/pediatra/inicio" className='pediatra__acceso__subbloque__opciones__1'>
-                            <button> Agregar </button>
-                        </Link>
+                        <div className='pediatra__acceso__subbloque__opciones__1'>
+                            <button onClick={handleAgregar}>Agregar</button>
+                        </div>
                         <div className='pediatra__insertar__subbloque__opciones__2'>
-                            <Link to="/acceso/pediatra/inicio">
-                                <button> Cancelar </button>
-                            </Link>
+                            <button onClick={() => navigate('/acceso/pediatra/inicio')}>Cancelar</button>
                         </div>
                     </div>
                 </LayoutSubbloque>
             </div>
         </LayoutBloque>
     </div>
-  )
-}
+  );
+};
 
-export default PediatraInsertar
+export default PediatraInsertar;

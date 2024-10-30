@@ -1,30 +1,33 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import TablaControles from '../../components/tabla_controles.jsx';
 
-// Datos de prueba
-const controles_test = [
-  { id: 1, nombre: 'Juan Pérez', peso: 25, estatura: 120 },
-  { id: 2, nombre: 'Ana Gómez', peso: 30, estatura: 130 },
-];
-
 const PediatraInicio = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const controles = location.state?.controles || [
+    { id: 1, rut: '21.111.111-1', peso: 7, estatura: 65 },
+    { id: 2, rut: '22.222.222-2', peso: 3, estatura: 45 },
+  ];
+
+  const irAInsertar = () => {
+    navigate('/acceso/pediatra/insertar', { state: { controles } }); // Navegar con estado
+  };
+
   return (
     <div className="pediatra__inicio">
-      {/* Bloque 1: Bienvenida */}
+      {/* Bienvenida */}
       <div className="bienvenida">
         <h1>Bienvenida, X</h1>
         <p>Aquí puede ver los controles realizados y agregar nuevos datos.</p>
       </div>
 
-      {/* Bloque 2: Componente de Tabla */}
-      <TablaControles controles={controles_test} />
+      {/* Tabla de Controles */}
+      <TablaControles controles={controles} />
 
-      {/* Bloque 3: Botón para agregar nuevo control */}
+      {/* Botón para Agregar Nuevo Control */}
       <div className="agregar-control">
-        <Link to="/acceso/pediatra/insertar">
-          <button>Agregar Nuevo Control</button>
-        </Link>
+        <button onClick={irAInsertar}>Agregar Nuevo Control</button>
       </div>
     </div>
   );

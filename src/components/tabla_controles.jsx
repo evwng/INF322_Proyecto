@@ -6,7 +6,7 @@ const TablaControles = ({ controles }) => {
       <table>
         <thead>
           <tr>
-            <th>Nombre</th>
+            <th>Rut</th>
             <th>Peso (Kg)</th>
             <th>Estatura (cm)</th>
           </tr>
@@ -14,7 +14,7 @@ const TablaControles = ({ controles }) => {
         <tbody>
           {controles.map((control) => (
             <tr key={control.id}>
-              <td>{control.nombre}</td>
+              <td>{control.rut}</td>
               <td>{control.peso}</td>
               <td>{control.estatura}</td>
             </tr>

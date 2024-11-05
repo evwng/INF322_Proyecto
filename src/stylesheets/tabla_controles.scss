@@ -1,16 +1,14 @@
-// TablaControles.scss
-
 .tabla__controles {
-    width: 80%;  // Ocupa 80% del ancho del contenedor padre
+    width: 80%;
     margin: auto;
   
     table {
       width: 100%;
-      border-collapse: collapse;  // Elimina espacios entre celdas
+      border-collapse: collapse;
     }
   
     th, td {
-      border: 1px solid #ddd;  // Bordes finos entre celdas
+      border: 1px solid #ddd;
       padding: 12px;
       text-align: center;
     }

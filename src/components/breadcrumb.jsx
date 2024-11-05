@@ -4,7 +4,6 @@ import { Link, useLocation } from 'react-router-dom';
 const Breadcrumb = () => {
   const location = useLocation();
 
-  // Convertimos la ruta actual en un array para mostrar cada parte como miga de pan
   const pathnames = location.pathname.split('/').filter((x) => x);
 
   return (

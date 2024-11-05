@@ -6,6 +6,7 @@ import childs_data from "../../data/childs_data.json"
 import standars from "../../data/standars.json"
 
 defaults.maintainAspectRatio = false;
+defaults.responsive = true;
 
 defaults.plugins.title.display = true;
 defaults.plugins.title.align = "start";
@@ -148,7 +149,7 @@ export const CuidadorInicio = () => {
         />
         </div>
         <div className="dataCard Wheight">
-        <Bar
+        <Line
           data={{
             labels: standars.map((data) => data.age),
             datasets: [
@@ -167,6 +168,7 @@ export const CuidadorInicio = () => {
             ]
           }}
           options={{
+
             elements: {
               line: {
                 tension: 0.5,

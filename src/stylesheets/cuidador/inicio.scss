@@ -1,7 +1,7 @@
 .cuadador__inicio {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Cuatro columnas de igual ancho */
-  grid-template-rows: auto auto; /* Dos filas automáticas */
+  grid-template-rows: 30% 70%; /* Dos filas automáticas */
   gap: 1rem; /* Espacio entre las tarjetas */
   padding: 1rem;
   background-color: #f0b879; /* Fondo de ejemplo */
@@ -32,6 +32,6 @@
 .dataCard.Wheight {
   grid-column: 1 / -1; /* Ocupa todas las columnas en la segunda fila */
   grid-row: 2;
-  height: auto; /* Permite que la tarjeta se expanda según el contenido */
+  height: 90%; /* Permite que la tarjeta se expanda según el contenido */
   align-self: start; /* Asegura que la tarjeta se alinee al inicio de la fila */
 }

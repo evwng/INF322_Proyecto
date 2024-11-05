@@ -1,0 +1,50 @@
+[
+    {
+        "age": 0,
+        "BMI": 16.0,
+        "armCircumference": 11.0,
+        "headCircumference": 34.5,
+        "height": 50.0,
+        "weight": 3.5
+    },
+    {
+        "age": 1,
+        "BMI": 17.0,
+        "armCircumference": 13.0,
+        "headCircumference": 45.0,
+        "height": 75.0,
+        "weight": 9.5
+    },
+    {
+        "age": 2,
+        "BMI": 16.5,
+        "armCircumference": 14.0,
+        "headCircumference": 47.0,
+        "height": 85.0,
+        "weight": 12.0
+    },
+    {
+        "age": 3,
+        "BMI": 15.8,
+        "armCircumference": 14.5,
+        "headCircumference": 48.0,
+        "height": 95.0,
+        "weight": 14.0
+    },
+    {
+        "age": 4,
+        "BMI": 15.5,
+        "armCircumference": 15.0,
+        "headCircumference": 49.0,
+        "height": 102.0,
+        "weight": 16.0
+    },
+    {
+        "age": 5,
+        "BMI": 15.3,
+        "armCircumference": 15.5,
+        "headCircumference": 50.0,
+        "height": 108.0,
+        "weight": 18.0
+    }
+]

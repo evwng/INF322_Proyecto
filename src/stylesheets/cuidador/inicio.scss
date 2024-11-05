@@ -1,0 +1,37 @@
+.cuadador__inicio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas de igual ancho */
+  grid-template-rows: auto auto; /* Dos filas automáticas */
+  gap: 1rem; /* Espacio entre las tarjetas */
+  padding: 1rem;
+  background-color: #f0b879; /* Fondo de ejemplo */
+  width: 100%; /* Ocupa todo el ancho de su celda */
+  box-sizing: border-box;
+  align-items: start; /* Asegura que las tarjetas se alineen correctamente */
+  height: 100%;
+}
+
+.dataCard {
+  background-color: whitesmoke; /* Color de fondo de las tarjetas */
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-sizing: border-box;
+  height: 90%;
+}
+
+/* Distribución de las tarjetas */
+.dataCard.BMI,
+.dataCard.Arm,
+.dataCard.Head,
+.dataCard.Height {
+  grid-column: span 1; /* Ocupa una columna */
+  grid-row: 1;
+}
+
+.dataCard.Wheight {
+  grid-column: 1 / -1; /* Ocupa todas las columnas en la segunda fila */
+  grid-row: 2;
+  height: auto; /* Permite que la tarjeta se expanda según el contenido */
+  align-self: start; /* Asegura que la tarjeta se alinee al inicio de la fila */
+}

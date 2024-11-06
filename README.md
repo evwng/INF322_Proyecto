@@ -23,3 +23,4 @@ Este proyecto será implementado en la asignatura Diseño de Interfaces Usuarias
 - Node (versión 16.13.1 o posterior)
 - npm (versión 8.1.2 o posterior)
 - ChartJS (correr "npm install chart.js react-chartjs-2")
+- Webpack (version 5.95.0 o posterior)

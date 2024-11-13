@@ -21,7 +21,7 @@ const PediatraInsertar = () => {
     };
 
     setControles([...controles, nuevoControl]);
-    navigate('/acceso/pediatra/inicio', { state: { controles: [...controles, nuevoControl] } });
+    navigate('/acceso/pediatra/controles', { state: { controles: [...controles, nuevoControl] } });
   };
 
   return (
@@ -49,7 +49,7 @@ const PediatraInsertar = () => {
                             <button onClick={handleAgregar}>Agregar</button>
                         </div>
                         <div className='pediatra__insertar__subbloque__opciones__2'>
-                            <button onClick={() => navigate('/acceso/pediatra/inicio')}>Cancelar</button>
+                            <button onClick={() => navigate('/acceso/pediatra/controles')}>Cancelar</button>
                         </div>
                     </div>
                 </LayoutSubbloque>

@@ -17,7 +17,7 @@ export const CuidadorAcceso = () => {
                     </div>
                     <div className='cuidador__acceso__subbloque__opciones'>
                         <Link to="/acceso"> <button className='volver'> Volver </button> </Link>
-                        <Link to="/acceso/cuidador/inicio"> <button className='consultar'> Consultar </button> </Link>
+                        <Link to="/acceso/cuidador/controles"> <button className='consultar'> Consultar </button> </Link>
                     </div>
                 </LayoutSubbloque>
             </div>

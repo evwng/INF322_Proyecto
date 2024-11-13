@@ -22,7 +22,7 @@ export const PediatraAcceso = () => {
                         </div>
                     </div>
                     <div className='pediatra__acceso__subbloque__opciones'>
-                        <Link to="/acceso/pediatra/inicio" className='pediatra__acceso__subbloque__opciones__1'>
+                        <Link to="/acceso/pediatra/controles" className='pediatra__acceso__subbloque__opciones__1'>
                             <button> Iniciar sesión </button>
                         </Link>
                         <div className='pediatra__acceso__subbloque__opciones__2'>

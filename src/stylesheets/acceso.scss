@@ -2,6 +2,10 @@
     width: 100%;
     height: 100%;
 
+    .layout__bloque__inferior {
+        gap: 5px;
+    }
+
     &__opcion {
         width: 50%;
         height: 100%;
@@ -9,12 +13,12 @@
         display: flex;
         align-items: center;
 
-        font-size: 15px;
+        font-size: 20px;
 
         p {
             opacity: 0.75;
-            
-            font-size: 12px;
+
+            font-size: 18px;
         }
 
         label, input {

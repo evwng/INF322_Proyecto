@@ -7,7 +7,7 @@ import Acceso from '../pages/acceso'
 import CuidadorAcceso from '../pages/cuidador/acceso'
 import CuidadorInicio from '../pages/cuidador/inicio'
 import PediatraAcceso from '../pages/pediatra/acceso'
-import PediatraInicio from '../pages/pediatra/inicio'
+import PediatraInicio from '../pages/pediatra/inicio.jsx'
 import PediatraInsertar from '../pages/pediatra/insertar'
 import Breadcrumb from '../components/breadcrumb.jsx';
 
@@ -35,10 +35,10 @@ const Layout = () => {
             <Route path='/' element={<Inicio />} />
             <Route path='/acceso' element={<Acceso />} />
             <Route path='/acceso/cuidador' element={<CuidadorAcceso />} />
-            <Route path='/acceso/cuidador/inicio' element={<CuidadorInicio />} />
+            <Route path='/acceso/cuidador/controles' element={<CuidadorInicio />} />
             <Route path='/acceso/pediatra' element={<PediatraAcceso />} />
-            <Route path='/acceso/pediatra/inicio' element={<PediatraInicio />} />
-            <Route path='/acceso/pediatra/inicio/insertar' element={<PediatraInsertar />} />
+            <Route path='/acceso/pediatra/controles' element={<PediatraInicio />} />
+            <Route path='/acceso/pediatra/controles/insertar' element={<PediatraInsertar />} />
           </Routes>
         </div>
       </div>

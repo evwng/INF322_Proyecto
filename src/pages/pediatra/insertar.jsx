@@ -13,13 +13,19 @@ const PediatraInsertar = () => {
   const [estatura, setEstatura] = useState('');
 
   const handleAgregar = () => {
+    const obtenerFechaActual = () => {
+      const fecha = new Date();
+      return fecha.toISOString().split('T')[0]; // Formato 'YYYY-MM-DD'
+    };
+  
     const nuevoControl = {
       id: controles.length + 1,
       rut,
       peso: Number(peso),
       estatura: Number(estatura),
+      fecha: obtenerFechaActual(),
     };
-
+  
     setControles([...controles, nuevoControl]);
     navigate('/acceso/pediatra/controles', { state: { controles: [...controles, nuevoControl] } });
   };

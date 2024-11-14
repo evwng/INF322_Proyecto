@@ -9,6 +9,7 @@ const TablaControles = ({ controles }) => {
             <th>Rut</th>
             <th>Peso (Kg)</th>
             <th>Estatura (cm)</th>
+            <th>Último Control</th>
           </tr>
         </thead>
         <tbody>
@@ -17,6 +18,7 @@ const TablaControles = ({ controles }) => {
               <td>{control.rut}</td>
               <td>{control.peso}</td>
               <td>{control.estatura}</td>
+              <td className="columna__fecha">{control.fecha}</td>
             </tr>
           ))}
         </tbody>

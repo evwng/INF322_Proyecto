@@ -4,6 +4,12 @@
     align-items: center;
     gap: 2rem;
     padding: 2rem;
+
+    .fecha-hora {
+      font-weight: bold;
+      text-align: right;
+      color: #555;
+    }
   
     .bienvenida {
       align-self: flex-start;
